@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+body {
+	background-image:  url('./sitepics/bamboo.jpg');
+}
+
+h1 {
+	font-family: Georgia, serif;
+	color: #D1D2BC;
+	size:44px;
+}
+
+p {
+	font-family: Georgia, serif;
+	color: #202020;
+	
+}
+
+.grid-container {
+	display:grid;
+	gap: 20px, 20px;
+	grid-template-columns: 400px auto auto;
+	grid-template-rows: auto auto auto auto;
+	background-color: #101010;
+	padding: 10px;
+		
+}
+
+.grid-item {
+	background-color: #101010:
+	border: 10px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 18px;
+	text-align: left;
+
+}
+
+.grid-item-paper {
+	background-color: #101010:
+	border: 10px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 18px;
+	text-align: left;
+	background-image: url("./sitepics/ricepaper.png") 
+}
+
+.hitem {
+  grid-column-start: 2;
+  grid-column-end: 4;
+	background-color: #101010:
+	border: 10px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 18px;
+	text-align: left;
+	background-image: url("./sitepics/ricepaper.png") 
+}
+
+.vitem24 {
+  grid-row-start:1;
+  grid-row-end:3;
+	background-color: #D1D2BC:
+	border: 5px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 18px;
+	text-align: left;
+}
+
+.hitemfoot {
+  grid-column-start: 1;
+  grid-column-end: 4;
+	background-color: #D1D2BC:
+	border: 10px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 14px;
+	text-align: right;
+	color: #EEEEEE;
+}
+
+
+
+</style>
+</head>
+<body>
+<!-- Load font awesome icons -->
+<link rel="stylesheet" href="./suikendo.css">
+
+<!-- The navigation menu -->
+<div class="navbar">
+  <a href="./index.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">About<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="./instructors_yamashita.html">Sensei Yamashita</a>
+      <a href="./instructors_hayes.html">Sensei Hayes</a>
+      <a href="./instructors_schulman.html">Sensei Schulman</a>
+	<a href="#blank"><hr></a>
+	<a href="./instructors_matayoshi.html">Senseis Matayoshi</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Gallery<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="./gallery.html">Class</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Karate<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="./instruction/kata.html">Kata</a>
+      <a href="./instruction/bunkai.html">Bunkai</a>
+      <a href="./instruction/yakasoku.html">Yakasoku</a>
+	<a href="./instruction/suikendo.html">Suikendo</a>
+	<a href="./instruction/Shorin_Ryu_Manual.pdf">Class Manual</a>
+    </div>
+  </div>
+  <div class="subnav">
+  	<button class="subnavbtn">Kobudo<i class="fa fa-caret-down"></i></button>
+  	<div class="subnav-content">
+		<a href="./instruction/bo.html">Bo</a>
+		<a href="./instruction/nunchaku.html">Nunchaku</a>
+		<a href="./instruction/sai.html">Sai</a>
+		<a href="./instruction/tonfa.html">Tonfa</a>
+		<a href="./instruction/kama.html">Kama</a>
+		<a href="./instruction/Kobudo_Manual.pdf">Kobudo Manual</a>
+	</div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Affiliated Schools<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="https://www.yamashitamartialarts.com/">Yamashita International</a>
+	<a href="https://pro-karate.com/">Pro-Karate of Wyoming, MI</a>
+      <a href="https://www.suibukanofwv.com/"m>Suikendo of West Virginia</a>
+    </div>
+  </div>
+</div>
+
+<p><center><img src="./sitepics/cover.jpg"></center></p>
+
+<div class="grid-container">
+  <div class="grid-item"><center><img src="./sitepics/SenseiYamashita.jpg" width="388" height="480"></center></div>
+  <div class="hitem">
+	<p><br>
+Tadashi Yamashita was born in Japan. but, he considers himself an Okinawan. His father died when he was three and his mother, who never remarried (the older Japanese did not believe in a remarriage), moved to Okinawa when Tadashi was eight years old. He lived in Okinawa until, at the age of 24, he came to the United States where he has since become a citizen. <br>
+Yamashita's experience of more than 45 years in Martial Arts began at the age of 11.  The roughest kid in school, he not only picked fights with the other students, but with the teachers as well. This was brought to the 
+attention of the PTA which realized it could not handle him. One day, the PTA president, who was also a Karate instructor, stopped by to pick up Tadashi after school.  Always the warrior. Tadashi tried to fight him. The instructor slapped the rebellious youngster and dragged him off to the dojo where he taught the elements of kicking, punching and most important of all - discipline.  Tadashi found his probation period very interesting. His destructiveness was channeled into his hidden talent. The young man had discovered an art form, a religion and a way of life.  Yamashita was awarded his Black Belt at the age Of 16.  In 1960, he captured the All-Okinawan Shorin-Ryu Free Sparring and Kata Grand Champion Titles.
+Yamashita opened a chain of karate schools in the Midwest and developed a following that has grown to than 20 dojos in the Midwest alone.<br>
+In 1968 he visited and tested before his instructor, 9th Degree Black Belt, Sensei Shuguro Nukazato. The panel also included famous Grand Master Chosin Chibana, 10th Degree Black Belt. Tadashi became the youngest 7th Degree Black Belt in Japan's history. <br>
+In 1970. on a return trip to Okinawa, Tadashi received his 5th Degree Black Belt in traditional Kobuto (Ancient Weapon Arts) from the famed master Sensei Shinpo Matayoshi.<br>
+In 1972, in search of a fuller life. Tadashi moved to Southern California.  Mike Stone was one of the first Martial Arts experts to recognize Sensei Yamashita's awesome Karate and Weapons talent.  The Pro-Am Tournament in Los Angeles in 1973 was the first of many in which he would demonstrate this talent. He brought spectators to their feet for a standing ovation and from moment on, the magic of his Karate Weapons genius spread throughout the Martial Arts world. <br>
+During the same year, Sensei Yamashita was featured on the television show "Thrillseekers". The show aired in Japan, and Tohe Productions contacted Yamashita and starred him in his first motion picture, "The Karate". This film was so well-received that Tohe used Yamashita in two more films, "The Blind Karate Man" and "The Karate II." <br>
+Some American films in which Yamashita has appeared are: "Enter the Dragon," "Judge Dee", "Golden Needles," "American Ninja," and "The Octagon" with Chuck Norris. Other film credits include "The Seven," many appearances on "Kung Fu," "A Man Called Sloan," and on "Knight Rider". <br>
+Yamashita is the foremost Karate and Weapons expert in the United States today, In the last decade he has taught thousands off students and produced several hundred Black Belts at Karate schools across country. He has received numerous awards. Countless titles have been bestowed upon him. He is Head instructor of Shorin-Ryu in the United States. <br>
+He is the founder of "Sui-ken-do" (way of the water fist), a devastating art that employs many strikes from different angles in rapid succession. <br>
+Yamashita has published a series of books on Karate and Kobudo training and is planning to publish more in the future.<br>
+Presently Sensei Yamashita holds the rank of 10th Degree Black Belt in both Karate and Kobudo. A unique individual, he is sought after worldwide for his Martial Arts prowess. 
+	</p></div>
+  <div class="hitemfoot">   </div>
+ 
+  <div class="hitemfoot">Copyright &copy;2023 Michigan Suibukan</div>  
+</div>
+
+</body>
+</html>

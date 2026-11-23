@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+body {
+	background-image:  url('./sitepics/bamboo.jpg');
+}
+
+h1 {
+	font-family: Georgia, serif;
+	color: #D1D2BC;
+	size:44px;
+}
+
+p {
+	font-family: Georgia, serif;
+	color: #202020;
+	
+}
+
+.grid-container {
+	display:grid;
+	gap: 20px, 20px;
+	grid-template-columns: 300px auto auto;
+	grid-template-rows: auto auto auto auto;
+	background-color: #101010;
+	padding: 10px;
+		
+}
+
+.grid-item {
+	background-color: #101010:
+	border: 10px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 18px;
+	text-align: left;
+
+}
+
+.grid-item-paper {
+	background-color: #101010:
+	border: 10px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 18px;
+	text-align: left;
+	background-image: url("./sitepics/ricepaper.png") 
+}
+
+.hitem {
+  grid-column-start: 2;
+  grid-column-end: 4;
+	background-color: #101010:
+	border: 10px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 18px;
+	text-align: left;
+	background-image: url("./sitepics/ricepaper.png") 
+}
+
+.vitem24 {
+  grid-row-start:1;
+  grid-row-end:3;
+	background-color: #D1D2BC:
+	border: 5px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 18px;
+	text-align: left;
+}
+
+.hitemfoot {
+  grid-column-start: 1;
+  grid-column-end: 4;
+	background-color: #D1D2BC:
+	border: 10px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 14px;
+	text-align: right;
+	color: #EEEEEE;
+}
+
+
+
+</style>
+</head>
+<body>
+<!-- Load font awesome icons -->
+<link rel="stylesheet" href="./suikendo.css">
+
+<!-- The navigation menu -->
+<div class="navbar">
+  <a href="./index.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">About<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="./instructors_yamashita.html">Sensei Yamashita</a>
+      <a href="./instructors_hayes.html">Sensei Hayes</a>
+      <a href="./instructors_schulman.html">Sensei Schulman</a>
+	<a href="#blank"><hr></a>
+	<a href="./instructors_matayoshi.html">Senseis Matayoshi</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Gallery<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="./gallery.html">Class</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Karate<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="./instruction/kata.html">Kata</a>
+      <a href="./instruction/bunkai.html">Bunkai</a>
+      <a href="./instruction/yakasoku.html">Yakasoku</a>
+	<a href="./instruction/suikendo.html">Suikendo</a>
+	<a href="./instruction/Shorin_Ryu_Manual.pdf">Class Manual</a>
+    </div>
+  </div>
+  <div class="subnav">
+  	<button class="subnavbtn">Kobudo<i class="fa fa-caret-down"></i></button>
+  	<div class="subnav-content">
+		<a href="./instruction/bo.html">Bo</a>
+		<a href="./instruction/nunchaku.html">Nunchaku</a>
+		<a href="./instruction/sai.html">Sai</a>
+		<a href="./instruction/tonfa.html">Tonfa</a>
+		<a href="./instruction/kama.html">Kama</a>
+		<a href="./instruction/Kobudo_Manual.pdf">Kobudo Manual</a>
+	</div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Affiliated Schools<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="https://www.yamashitamartialarts.com/">Yamashita International</a>
+	<a href="https://pro-karate.com/">Pro-Karate of Wyoming, MI</a>
+      <a href="https://www.suibukanofwv.com/"m>Suikendo of West Virginia</a>
+    </div>
+  </div>
+</div>
+
+<p><center><img src="./sitepics/cover.jpg"></center></p>
+
+<div class="grid-container">
+  <div class="grid-item"><center><img src="./sitepics/SenseiDave.gif" width="250" height="455"></center></div>
+  <div class="hitem">
+	<p><br><br>David Hayes was born in New York in 1958, his family moved to Cleveland, Ohio, where they lived until 1969, when they moved to Muskegon, MI.  
+	The new kid in school, he found himself having to fight many of the students at the school.  This was also a time of rising racial tensions in the area.  
+	Feeling the lack of security, David began the study of Martial Arts at Muskegon Community College under Ernest Lieb in March of 1972.  Sensei Lieb was the best instructor to be found, with very good credentials.  
+	He was the founder of the American Karate Association and the American Karate System which was the first American style of Karate.  Sensei Lieb was awarded the Man of the Year award from Black Belt Magazine, which is the highest 
+	honor that can be received in the U.S.A.  Sensei Lieb was also one of the top fighters in the U.S. and passed much of his knowledge on to Sensei Hayes.<br>
+	Sensei Hayes received his Black Belt in the A.K.S. in 1975 at the age of 16 to become the youngest person to receive that rank in the history of the A.K.S.  The style does not allow Black Belt rank until the age of 18.  
+	Sensei Lieb broke the rules for Mr. Hayes because he saw the talent, dedication, and maturity that he would need to hold the rank.  Sensei Hayes proved his instructor made the right choice by winning the Black Belt division in the 
+	American Karate National Tournament that same year as a 16 year old.  Sensei Hayes went on to win the Nationals 4 more times.  He placed in over 150 other tournaments, was rated in Karate Illustrated Magazine #3 in fighting and 
+	#1 in Kata in the Midwest.  He was one of the winners of the first "Michigan Top Fighter" award from the Michigan Karate Circuit.<br>
+	Sensei Hayes, having met his own goals in tournament competition, and receiving a 5th degree Black Belt in the American Karate System, went seeking more knowledge and a more traditional style which would feed his hunger for knowledge.  
+	He found Tadashi Yamashita whom he first met in 1973 in South Bend, Indiana.  Sensei Hayes spoke with Sensei Yamashita in Grand Rapids, MI and asked to study his style, Kobayashi Shorin-Ryu.  
+	Sensei Yamashita took Mr. Hayes as a student, and with his instruction, and the help of Sensei Babis Polychronopolis, Sensei Hayes currently holds a ninth-degree Black Belt in Shorin-Ryu and a 7th degree Black Belt in Yamashita-Matayoshi Kobudo.<br>
+	Sensei Hayes through his school the Michigan Suibukan, and branch club in West Virginia, is dedicated to supporting Sensei Yamashita as our Chief Instructor, and is dedicated to the advancement of Okinawan Karate-Do in the 
+	State of Michigan, and believes that through karate training many people, especially here in the United States with the fast paced lifestyles and many broken homes, can benefit from the philosophy and culture taught in Karate.
+	</p></div>
+  <div class="hitemfoot">Copyright &copy;2023 Michigan Suibukan</div>  
+
+</body>
+</html>

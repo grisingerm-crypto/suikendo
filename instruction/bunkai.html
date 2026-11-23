@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+body {
+	background-image:  url('../sitepics/bamboo.jpg');
+}
+
+h1 {
+	font-family: Georgia, serif;
+	color: #D1D2BC;
+	size:44px;
+}
+
+p {
+	font-family: Georgia, serif;
+	color: #202020;
+	
+}
+
+.grid-container {
+	display:grid;
+	gap: 20px, 20px;
+	grid-template-columns: 300px auto auto;
+	grid-template-rows: auto auto auto auto;
+	background-color: #101010;
+	padding: 10px;
+		
+}
+
+.grid-item {
+	background-color: #101010:
+	border: 10px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 18px;
+	text-align: left;
+
+}
+
+.grid-item-paper {
+	background-color: #101010:
+	border: 10px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 18px;
+	text-align: left;
+	background-image: url("../sitepics/ricepaper.png") 
+}
+
+.hitem {
+  grid-column-start: 2;
+  grid-column-end: 4;
+	background-color: #101010:
+	border: 10px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 18px;
+	text-align: left;
+	background-image: url("../sitepics/ricepaper.png") 
+}
+
+.vitem24 {
+  grid-row-start:1;
+  grid-row-end:3;
+	background-color: #D1D2BC:
+	border: 5px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 18px;
+	text-align: left;
+}
+
+.hitemfoot {
+  grid-column-start: 1;
+  grid-column-end: 4;
+	background-color: #D1D2BC:
+	border: 10px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 14px;
+	text-align: right;
+	color: #EEEEEE;
+}
+
+
+
+</style>
+</head>
+<body>
+<!-- Load font awesome icons -->
+<link rel="stylesheet" href="../suikendo.css">
+
+<!-- The navigation menu -->
+<div class="navbar">
+  <a href="../index.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">About<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="../instructors_yamashita.html">Sensei Yamashita</a>
+      <a href="../instructors_hayes.html">Sensei Hayes</a>
+      <a href="../instructors_schulman.html">Sensei Schulman</a>
+	<a href="#blank"><hr></a>
+	<a href="../instructors_matayoshi.html">Senseis Matayoshi</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Gallery<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="../gallery.html">Class</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Karate<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="./kata.html">Kata</a>
+      <a href="./bunkai.html">Bunkai</a>
+      <a href="./yakasoku.html">Yakasoku</a>
+	<a href="./suikendo.html">Suikendo</a>
+	<a href="./Shorin_Ryu_Manual.pdf">Class Manual</a>
+    </div>
+  </div>
+  <div class="subnav">
+  	<button class="subnavbtn">Kobudo<i class="fa fa-caret-down"></i></button>
+  	<div class="subnav-content">
+		<a href="./bo.html">Bo</a>
+		<a href="./nunchaku.html">Nunchaku</a>
+		<a href="./sai.html">Sai</a>
+		<a href="./tonfa.html">Tonfa</a>
+		<a href="./kama.html">Kama</a>
+		<a href="./Kobudo_Manual.pdf">Kobudo Manual</a>
+	</div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Affiliated Schools<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="https://www.yamashitamartialarts.com/">Yamashita International</a>
+	<a href="https://pro-karate.com/">Pro-Karate of Wyoming, MI</a>
+      <a href="https://www.suibukanofwv.com/"m>Suikendo of West Virginia</a>
+    </div>
+  </div>
+</div>
+
+<p><center><img src="../sitepics/cover.jpg"></center></p>
+
+<div class="grid-container">
+  <div class="grid-item"><center><img src="../sitepics/misui5.png" width="250" height="455"></center></div>
+  <div class="hitem">
+	<p>Bunkai are 'kata in application.'  They don't represent the only expression of the kata into a usable form, but present a common usage for the techniques of the kata in a two-person form.<br>
+	Students applying Bunkai learn focus with power and control and refine proper footwork and distance relative to the uke, or attacker:
+	<hr><br>
+	<b>Pinan Bunkai:</b>
+	<ul>
+		<li><a href="#futurelink">Pinan Eedan Bunkai</a>
+		<li><a href="https://suibukan.blob.core.windows.net/$web/Instruction/pinan_shodan_bunkai_a.mp4">Pinan Shodan Bunkai - Attacking Side</a>
+		<li><a href="https://suibukan.blob.core.windows.net/$web/Instruction/pinan_shodan_bunkai_d.mp4">Pinan Shodan Bunkai - Defending Side</a>
+		<li><a href="https://suibukan.blob.core.windows.net/$web/Instruction/pinan_sandan_bunkai_a.mp4">Pinan Sandan Bunkai - Attacking Side</a>
+		<li><a href="https://suibukan.blob.core.windows.net/$web/Instruction/pinan_sandan_bunkai_d.mp4">Pinan Sandan Bunkai - Defending Side</a>
+		<li><a href="https://suibukan.blob.core.windows.net/$web/Instruction/pinan_sandan_bunkai.mp4">Pinan Sandan Bunkai</a>
+		<li><a href="https://suibukan.blob.core.windows.net/$web/Instruction/pinan_sandan_bunkai_2.mp4">Pinan Sandan Bunkai - Opposite Roles</a>
+		<li><a href="#futurelink">Pinan Yodan Bunkai</a>
+		<li><a href="#futurelink">Pinan Godan Bunkai</a>
+	</ul>
+	<hr><br>
+	<b>Naihanshi Bunkai:</b>
+	<ul>
+		<li><a href="#futurelink">Naihanshi Shodan Bunkai</a>
+		<li><a href="#futurelink">Naihanshi Shodan Bunkai - Alternate</a>
+	</ul>
+	<hr><br>
+	<b>Complexes are similar to Bunkai and comprise sets of movements corresponding to several kata or a common set of actions:</b>
+	<ul>
+		<li><a href="#futurelink">Pinan Complex</a>
+		<li><a href="#futurelink">Naihanshi Complex</a>
+		<li><a href="#futurelink">Breaking Complex</a>
+		<li><a href="#futurelink">Yakasoku Complex</a>
+	</ul><br>
+	The Suikendo Complex is listed with other Suikendo material.<br>
+	</p></div>
+  <div class="hitemfoot">Copyright &copy;2023 Michigan Suibukan</div>  
+</div>
+
+</body>
+</html>

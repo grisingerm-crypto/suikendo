@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+body {
+	background-image:  url('./sitepics/bamboo.jpg');
+}
+
+h1 {
+	font-family: Georgia, serif;
+	color: #D1D2BC;
+	size:44px;
+}
+
+p {
+	font-family: Georgia, serif;
+	color: #202020;
+	
+}
+
+.grid-container {
+	display:grid;
+	gap: 20px, 20px;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto auto;
+	background-color: #101010;
+	padding: 10px;
+		
+}
+
+.grid-item {
+	background-color: #101010:
+	border: 10px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 18px;
+	text-align: left;
+
+}
+
+.grid-item-paper {
+	background-color: #101010:
+	border: 10px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 18px;
+	text-align: left;
+	background-image: url("./sitepics/ricepaper.png") 
+}
+
+.hitem {
+  grid-column-start: 2;
+  grid-column-end: 4;
+	background-color: #101010:
+	border: 10px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 18px;
+	text-align: left;
+	background-image: url("./sitepics/ricepaper.png") 
+}
+
+.vitem24 {
+  grid-row-start:1;
+  grid-row-end:3;
+	background-color: #D1D2BC:
+	border: 5px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 18px;
+	text-align: left;
+}
+
+.hitemfoot {
+  grid-column-start: 1;
+  grid-column-end: 4;
+	background-color: #D1D2BC:
+	border: 10px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 14px;
+	text-align: right;
+	color: #EEEEEE;
+}
+
+
+
+</style>
+</head>
+<body>
+<!-- Load font awesome icons -->
+<link rel="stylesheet" href="./suikendo.css">
+
+<!-- The navigation menu -->
+<div class="navbar">
+  <a href="./index.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">About<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="./instructors_yamashita.html">Sensei Yamashita</a>
+      <a href="./instructors_hayes.html">Sensei Hayes</a>
+      <a href="./instructors_schulman.html">Sensei Schulman</a>
+	<a href="#blank"><hr></a>
+	<a href="./instructors_matayoshi.html">Senseis Matayoshi</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Gallery<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="./gallery.html">Class</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Karate<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="./instruction/kata.html">Kata</a>
+      <a href="./instruction/bunkai.html">Bunkai</a>
+      <a href="./instruction/yakasoku.html">Yakasoku</a>
+	<a href="./instruction/suikendo.html">Suikendo</a>
+	<a href="./instruction/Shorin_Ryu_Manual.pdf">Class Manual</a>
+    </div>
+  </div>
+  <div class="subnav">
+  	<button class="subnavbtn">Kobudo<i class="fa fa-caret-down"></i></button>
+  	<div class="subnav-content">
+		<a href="./instruction/bo.html">Bo</a>
+		<a href="./instruction/nunchaku.html">Nunchaku</a>
+		<a href="./instruction/sai.html">Sai</a>
+		<a href="./instruction/tonfa.html">Tonfa</a>
+		<a href="./instruction/kama.html">Kama</a>
+		<a href="./instruction/Kobudo_Manual.pdf">Kobudo Manual</a>
+	</div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Affiliated Schools<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="https://www.yamashitamartialarts.com/">Yamashita International</a>
+	<a href="https://pro-karate.com/">Pro-Karate of Wyoming, MI</a>
+      <a href="https://www.suibukanofwv.com/"m>Suikendo of West Virginia</a>
+    </div>
+  </div>
+</div>
+
+<p><center><img src="./sitepics/cover.jpg"></center></p>
+
+<div class="grid-container">
+  <div class="grid-item"><center><img src="./sitepics/misui5.png" width="250" height="455"></center></div>
+  <div class="hitem">
+<center>
+	<img class="Dojo" src="./sitepics/slideshow/12794802_584962925002859_612923116898911723_o.jpg" style="max-width:800px">
+	<img class="Dojo" src="./sitepics/slideshow/12829171_584949728337512_7630723845879868811_o.jpg" style="max-width:800px">
+	<img class="Dojo" src="./sitepics/slideshow/12829425_584965441669274_2673428230271013180_o.jpg" style="max-width:800px">
+	<img class="Dojo" src="./sitepics/slideshow/2023_class.jpg" style="max-width:800px">
+	<img class="Dojo" src="./sitepics/slideshow/12841317_584965825002569_3857614237323302440_o.jpg" style="max-width:800px">
+	<img class="Dojo" src="./sitepics/slideshow/12920539_602243793274772_5592905166673586885_n.jpg" style="max-width:800px">
+	<img class="Dojo" src="./sitepics/slideshow/12936483_602243826608102_5614342306013522833_n.jpg" style="max-width:800px">
+	<img class="Dojo" src="./sitepics/slideshow/12936512_602243753274776_1969092399693909487_n.jpg" style="max-width:800px">
+	<img class="Dojo" src="./sitepics/slideshow/12985531_602243853274766_3589148879892824513_n.jpg" style="max-width:800px">
+	<img class="Dojo" src="./sitepics/slideshow/2023_class_2.jpg" style="max-width:800px">
+</center>
+  </div>
+  <div class="hitemfoot">   </div>
+  
+  <div class="hitemfoot">Copyright &copy;2023 Michigan Suibukan</div>  
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("Dojo");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+</script>
+
+</body>
+</html>

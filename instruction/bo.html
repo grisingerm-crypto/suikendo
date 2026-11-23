@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+body {
+	background-image:  url('../sitepics/bamboo.jpg');
+}
+
+h1 {
+	font-family: Georgia, serif;
+	color: #D1D2BC;
+	size:44px;
+}
+
+p {
+	font-family: Georgia, serif;
+	color: #202020;
+	
+}
+
+.grid-container {
+	display:grid;
+	gap: 20px, 20px;
+	grid-template-columns: 300px auto auto;
+	grid-template-rows: auto auto auto auto;
+	background-color: #101010;
+	padding: 10px;
+		
+}
+
+.grid-item {
+	background-color: #101010:
+	border: 10px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 18px;
+	text-align: left;
+
+}
+
+.grid-item-paper {
+	background-color: #101010:
+	border: 10px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 18px;
+	text-align: left;
+	background-image: url("../sitepics/ricepaper.png") 
+}
+
+.hitem {
+  grid-column-start: 2;
+  grid-column-end: 4;
+	background-color: #101010:
+	border: 10px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 18px;
+	text-align: left;
+	background-image: url("../sitepics/ricepaper.png") 
+}
+
+.vitem24 {
+  grid-row-start:1;
+  grid-row-end:3;
+	background-color: #D1D2BC:
+	border: 5px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 18px;
+	text-align: left;
+}
+
+.hitemfoot {
+  grid-column-start: 1;
+  grid-column-end: 4;
+	background-color: #D1D2BC:
+	border: 10px solid rgba(0,0,0,0.8);
+	padding: 10px;
+	font-size: 14px;
+	text-align: right;
+	color: #EEEEEE;
+}
+
+
+
+</style>
+</head>
+<body>
+<!-- Load font awesome icons -->
+<link rel="stylesheet" href="../suikendo.css">
+
+<!-- The navigation menu -->
+<div class="navbar">
+  <a href="../index.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">About<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="../instructors_yamashita.html">Sensei Yamashita</a>
+      <a href="../instructors_hayes.html">Sensei Hayes</a>
+      <a href="../instructors_schulman.html">Sensei Schulman</a>
+	<a href="#blank"><hr></a>
+	<a href="../instructors_matayoshi.html">Senseis Matayoshi</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Gallery<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="../gallery.html">Class</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Karate<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="./kata.html">Kata</a>
+      <a href="./bunkai.html">Bunkai</a>
+      <a href="./yakasoku.html">Yakasoku</a>
+	<a href="./suikendo.html">Suikendo</a>
+	<a href="./Shorin_Ryu_Manual.pdf">Class Manual</a>
+    </div>
+  </div>
+  <div class="subnav">
+  	<button class="subnavbtn">Kobudo<i class="fa fa-caret-down"></i></button>
+  	<div class="subnav-content">
+		<a href="./bo.html">Bo</a>
+		<a href="./nunchaku.html">Nunchaku</a>
+		<a href="./sai.html">Sai</a>
+		<a href="./tonfa.html">Tonfa</a>
+		<a href="./kama.html">Kama</a>
+		<a href="./Kobudo_Manual.pdf">Kobudo Manual</a>
+	</div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Affiliated Schools<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="https://www.yamashitamartialarts.com/">Yamashita International</a>
+	<a href="https://pro-karate.com/">Pro-Karate of Wyoming, MI</a>
+      <a href="https://www.suibukanofwv.com/"m>Suikendo of West Virginia</a>
+    </div>
+  </div>
+</div>
+
+<p><center><img src="../sitepics/cover.jpg"></center></p>
+
+<div class="grid-container">
+  <div class="grid-item"><center><img src="../sitepics/misui5.png" width="250" height="455"></center></div>
+  <div class="hitem">
+	<p><h2>Bo Curriculum:</h2><br>
+	<b>Hojoundo (Supplementary Training):</b>
+	<ul>
+		<li><a href="https://suibukan.blob.core.windows.net/$web/Instruction/hojoundo_bo_set_1.mp4">Dai Ichi
+			<ol>
+				<li>Jodan Uchi: vertical strike to top of head
+				<li>Jodan Naname Uchi: diagonal strike to the head or neck
+				<li>Chudan Naname Uchi: middle section side strike
+				<li>Gedan Naname Uchi: side strike to the knee
+				<li>Chudan Kaku Uke and Tsuki:  middle block and thrust to throat
+			</ol></a>
+		<li><a href="https://suibukan.blob.core.windows.net/$web/Instruction/hojoundo_bo_set_2.mp4">Dai Ni
+			<ol start=6>
+				<li>Gedan Harai Uke and Jodan Naname Uchi:  Low inside sweeping block and diagonal head strike
+				<li>Gedan Hane Uke and Gedan Nukibo:  Reverse low block from hip and spear thrust to arch of foot
+				<li>Sunakake:  sand throw to eyes
+				<li>Gedan Osae Uke:  Reverse circular low block
+				<li>Gyaku Uchi and Gyaku Tsuki:  Upper strike to jaw and move forward with reverse grip thrust to throat
+			</ol></a>
+		<li><a href="https://suibukan.blob.core.windows.net/$web/Instruction/hojoundo_bo_set_3.mp4">Dai San
+			<ol start=11>
+				<li>Gedan Yoko Uke and Jodan Naname Uchi:  Outside low block (reverse grip) and diagonal head strike
+				<li>Jodan Naname Uchi and Tsuki:  Diagonal head strike and thrust to throat
+				<li>Chudan Nagashi Uchi, Gedan Uke and Jodan Naname Uchi:  Upper angle side strike to ribs, reverse grip low outside block, and move forward with diagonal head strike
+				<li>Gedan Yoko Uke, Gedan Osae Uke and Jodan Naname Uchi:  Outside low block, circular low block, and move forward with diagonal head strike
+				<li>Gorenda:  5 attacks combination: Diagonal head strike, upper sweep strike to jaw, down strike to collarbone, middle side strike and diagonal head strike
+			</ol></a>
+	</ul>
+	<hr><br>
+	<b>Basic Kata</b>
+	<ul>
+		<li><a href="https://suibukan.blob.core.windows.net/$web/Instruction/kihon_bo_1.mp4">Bo Kihon Shodan</a>
+		<li>Bo Kihon Nidan
+		<li>Bo Kihon Sandan
+		<li>Bo Kihon Yondan
+	</ul><br>
+	<b>Advanced Kata</b>
+	<ul>
+		<li>Choun No Kun
+		<li>Shushi No Kun
+		<li>Tsuken No Kun
+		<li>Sakugawa No Kun
+		<li>Shishi No Kun
+	</ul><br>
+	<hr><br>
+	<b>Suikendo Bo</b>
+	<ul>
+		<li><a href="https://suibukan.blob.core.windows.net/$web/Instruction/suikendo_bo_1.mp4">Suikendo Bo Shodan</a>
+		<li>Suikendo Bo Nidan
+		<li>Suikendo Bo Sandan
+		<li>Suikendo Bo Yondan
+		<li>Suikendo Bo Godan
+		<li>Suikendo Bo Rokudan
+		<li>Suikendo Bo Nandan
+		<li>Suikendo Bo Hachidan
+	</ul><br>
+	<hr><br>
+	<b>Two-Person</b>
+	<ul>
+		<li>Bo Complex
+		<li>Bo Yakasoku
+	</ul><br>
+	</p></div>
+  <div class="hitemfoot">Copyright &copy;2023 Michigan Suibukan</div>  
+</div>
+
+</body>
+</html>
